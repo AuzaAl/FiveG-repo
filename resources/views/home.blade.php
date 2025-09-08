@@ -17,15 +17,15 @@
 </head>
 <body>
     <main>
-        <header class="border w-full h-25 border-pink-400 fixed top-0">
-        <div class="flex px-18 w-full h-full justify-between items-center">
-        <img src="{{ asset('storage/FIVEG.png') }}" alt="logo" class="w-50">
+        <header class=" w-full h-25 fixed top-0 z-[999]">
+        <div class="flex px-8 md:px-18 w-full h-full justify-between items-center">
+        <img src="{{ Vite::asset('resources/images/FIVEG.png') }}" alt="logo" class=" w-30 md:w-50">
             <div class="flex items-center">
                 <a href="" class="flex flex-row gap-2">
-                    <div class="size-8 rounded-full bg-GreenA flex justify-center items-center">
-                    <p class="font-anie text-xl text-white">!</p>
+                    <div class=" size-4 md:size-8 rounded-full bg-GreenA flex justify-center items-center">
+                    <p class="font-anie text-[10px] md:text-xl text-white">!</p>
                     </div>
-                    <div class="flex flex-row [&>*]:text-2xl [&>*]:text-white gap-1 ">
+                    <div class="flex flex-row [&>*]:text-xs md:[&>*]:text-2xl [&>*]:text-white gap-1 ">
                         <i class="font-agua mt-1">G</i>
                         <p class="font-bsd">et in touch</p>
                     </div>
@@ -33,11 +33,29 @@
             </div>
         </div>
         </header>
-        <section id="Hero" class="h-screen w-full border border-black bg-gray-800">
-            <div id="hero-bg" class="bg-[url(../../public/storage/italianobg.jpg)]">
+        <section id="Hero" class="h-screen w-full border border-black">
+        <figure class="w-full h-screen bg-[url(../images/blackovelay.png)] w-[100dvh-30rem] bg-cover absolute z-[-1] border border-green-200"></figure>
+        <div class="w-full h-screen bg-[url(../images/italianobg.jpg)] bg-cover bg-center absolute z-[-2]"></div>
+            <div id="Hero-content" class="w-full max-w-full h-screen max-h-screen absolute flex justify-center items-center">
+                <figure class="z-[-1] w-65 md:w-100 lg:w-130 2xl:w-180 absolute">
+                     <img src="{{ Vite::asset('resources/images/star.png') }}" alt="star">
+                </figure>
+                <div id="hero-text" class="block text-[3em]/[0.8] md:text-[4.3em]/[0.8] lg:text-[6em]/[0.8] 2xl:text-[8em]/[0.8] font-bsd uppercase text-white text-center w-full">
+                    <p class="flex max-w-full md:max-w-2/3 justify-center smooth-text"><span> DENGAN </span> </p>
+                    <p class="flex justify-center gap-5 max-w-full md:max-w-2/3 smooth-text"><span><i class="font-allura text-[1.5em] -mt-2">I</i> 
+                    LMU</span></p>
+                    <div id="spacing" class="w-full h-20 md:hidden"></div>
+                    <p class="flex max-w-full ml-auto md:max-w-2/3 justify-center smooth-text"><span>DAN</span> </p>
+                    <p class="flex justify-center ml-auto gap-5 max-w-full md:max-w-2/3 smooth-text">
+                        <span><i class="font-allura text-[1.5em] -mt-2">A</i>
+                        KSI </span> 
+                    </p>
+                </div>
+                
             </div>
+        </div>
         </section>
-        <section id="Hero" class="h-screen w-full border border-black ">
+        <section id="about" class="h-screen w-full bg-[#000000]">
 
         </section>
     </main>

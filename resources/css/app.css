@@ -5,26 +5,34 @@
 @source '../**/*.blade.php';
 @source '../**/*.js';
 
-@import url('https://fonts.googleapis.com/css2?family=Allison&family=Annie+Use+Your+Telescope&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Allison&family=Annie+Use+Your+Telescope&Allura&display=swap');
 
 @font-face {
     font-family: 'BSD';
-    src: url('../../public/fonts/GeneralSans-Semibold.woff')format('woff');
+    src: url('../fonts/GeneralSans-Semibold.woff')format('woff');
   font-weight: 700;
   font-style: normal;
   font-display: swap;
 }
+@font-face {
+    font-family: 'Allura';
+    src: url('../fonts/Allura-Regular.ttf')format('truetype');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 
 @font-face {
   font-family: 'Allison';
-  src: url("../../public/fonts/demo-allison-script.otf") format('opentype');
+  src: url("../fonts/demo-allison-script.otf") format('opentype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: 'Aguafina';
-  src: url("../../public/fonts/aguafina-script.regular.ttf") format('truetype');
+  src: url("../fonts/aguafina-script.regular.ttf") format('truetype');
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -37,6 +45,13 @@
     --font-agua: Aguafina, "cursive";
     --font-alison: Allison, "cursive";
     --font-bsd: BSD, "cursive";
+    --font-allura: Allura, cursive;
     --font-anie:"Annie Use Your Telescope", cursive;
     --color-GreenA:#23DE35;
       }
+
+
+.smooth-text {
+  transition: font-size 1s cubic-bezier(0.83, 0, 0.17, 1), line-height 0.5s cubic-bezier(0.83, 0, 0.17, 1);
+   transition-delay: 0.3s; /* 300ms */
+}
