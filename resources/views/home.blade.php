@@ -17,7 +17,7 @@
 </head>
 <body>
     <main>
-        <header class=" w-full h-25 fixed top-0 z-[999]">
+        <header class=" w-full h-25 fixed top-0 z-999">
         <div class="flex px-8 md:px-18 w-full h-full justify-between items-center">
         <img src="{{ Vite::asset('resources/images/FIVEG.png') }}" alt="logo" class=" w-30 md:w-50">
             <div class="flex items-center">
@@ -25,7 +25,7 @@
                     <div class=" size-4 md:size-8 rounded-full bg-GreenA flex justify-center items-center">
                     <p class="font-anie text-[10px] md:text-xl text-white">!</p>
                     </div>
-                    <div class="flex flex-row [&>*]:text-xs md:[&>*]:text-2xl [&>*]:text-white gap-1 ">
+                    <div class="flex flex-row *:text-xs md:*:text-2xl *:text-white gap-1 ">
                         <i class="font-agua mt-1">G</i>
                         <p class="font-bsd">et in touch</p>
                     </div>
